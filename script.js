@@ -1,7 +1,3 @@
-
-
-
-
 let BMIWeight = 0;
 let BMIFat = 0;
 let ageTemp = 0;
@@ -45,8 +41,12 @@ btn.onclick = function CalculateBMI(){
                 
 
         },1000);
+        $("#red").hide()
+        $("#green").hide()
+        $("#yellow").show()
         $("#yellow").css("z-index", "1")
         $("#yellow").css("border-radius", "10px")
+
 
 
  
@@ -69,6 +69,7 @@ btn.onclick = function CalculateBMI(){
         $("#green").css("border-radius", "10px")
         $("#green").css("left", "0px" )
         $("#green").css("top", "45%" )
+        $("#green").show()
         $("#red").hide()
         $("#yellow").hide()
  
@@ -94,14 +95,14 @@ btn.onclick = function CalculateBMI(){
         $("#green").css("border-radius", "10px")
         $("#green").css("border-bottom-right-radius", "0px")
         $("#green").css("border-top-right-radius", "0px")
-
         $("#green").css("left", "0px" )
         $("#green").css("top", "44%" )
+        $("#red").css("border-bottom-left-radius", "0px")
+        $("#red").css("border-top-left-radius", "0px")
         $("#red").css("top", "-12px" )
         $("#red").css("left", "70px" )
-
-    
-
+        $("#green").show()
+        $("#red").show()
         $("#yellow").hide()
  
    
@@ -123,13 +124,15 @@ btn.onclick = function CalculateBMI(){
         $("#red").css("top", "45%" )
         $("#green").hide()
         $("#yellow").hide()
+        $("#red").show()
+
  
    
         });
         
 
     }
- 
+//age < 18
     
 
     if(ageValue < 18 && BMIWeight < 14 ){
@@ -141,6 +144,8 @@ btn.onclick = function CalculateBMI(){
         },1000);
         $("#yellow").css("z-index", "1")
         $("#yellow").css("border-radius", "10px")
+        $("#yellow").show()
+
 
 
  
@@ -165,6 +170,8 @@ btn.onclick = function CalculateBMI(){
         $("#green").css("top", "45%" )
         $("#red").hide()
         $("#yellow").hide()
+        $("#green").show()
+
  
    
         });
@@ -190,14 +197,14 @@ btn.onclick = function CalculateBMI(){
         $("#green").css("border-radius", "10px")
         $("#green").css("border-bottom-right-radius", "0px")
         $("#green").css("border-top-right-radius", "0px")
-
         $("#green").css("left", "0px" )
         $("#green").css("top", "44%" )
+        $("#red").css("border-bottom-left-radius", "0px")
+        $("#red").css("border-top-left-radius", "0px")
         $("#red").css("top", "-12px" )
         $("#red").css("left", "70px" )
-
-    
-
+        $("#red").show()
+        $("#green").show()
         $("#yellow").hide()
  
    
@@ -219,6 +226,7 @@ btn.onclick = function CalculateBMI(){
         $("#red").css("top", "45%" )
         $("#green").hide()
         $("#yellow").hide()
+        $("#red").show()
  
    
         });
