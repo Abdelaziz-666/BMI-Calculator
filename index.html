@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="h1"><h1 id="h1">Body Mass Index (BMI) Calculator</h1></div>
+
+    <div class="container">
+  
+        <div class="input">
+        <input type="number" id="height" min="1" max="300" placeholder=" Height "  value="165" required>
+        <input type="number" id="weight" min="1" maxlength="3" placeholder=" Weight "  value="65" required>
+        <input type="number" id="age" min="1" maxlength="3" placeholder=" Age "  value="18" required>
+        <input type="text" id="gender"  placeholder=" Gender "  value="Male" required list="Gender">
+        <datalist id="Gender">
+            <option value="Male">
+            <option value="Female"></option>    
+        </datalist>
+
+
+
+        </div>
+        
+        <button id="btn">Calculate</button>
+        <div class="small">
+        <small id="small1">23.9</small>
+        <small id="small2">16.6</small>
+
+        </div>
+        <div class="p">
+            <p id="p1">IBW</p>
+            <p id="p2">IBFP</p>
+
+        </div>
+        <div class="inputP">
+            <p id="heightp">Height</p>
+            <p id="weightp">Weight</p>
+            <p id="agep">Age</p>
+            <p id="genderp">Gender</p>
+
+            
+        </div>
+        
+        <div class="inputAfterP">
+            <p id="heightpA">cm</p>
+            <p id="weightpA">Kg</p>
+            <p id="agepA">Year</p>
+        
+        </div>
+
+
+        <div id="bar">
+            <div id="yellow"></div>
+            <div id="green"></div>
+            <div id="red"></div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
