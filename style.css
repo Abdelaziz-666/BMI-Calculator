@@ -5,13 +5,16 @@
 
 }
 body{
-    background-image: linear-gradient(	lavender   , hsla(240, 67%, 94%, 0.781));
+    background-image: linear-gradient( to bottom right,	#5a01ff 40%   , hsla(240, 67%, 94%, 0.781));
     height: 100vh;
     justify-items: center;
+    align-content: center;
 }
 #h1{
-    position: relative;
-;
+    position: absolute;
+    width: max-content;
+    top: -15%;
+    left: -20%;
 
 }
 .container{
@@ -192,13 +195,60 @@ body{
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 550px){
+
     #h1{
-        font-size: larger;
+        width: max-content;
+        font-size: 100%;
+        position: static;
+        
+        
+        
     }
     .container{
-        min-width: 50%;
+        width: 80%;
         max-width: 350px;
+        justify-items: center;
+    }
+    .inputP{
+        left: 2%;
+
+        
+    
+    }
+    .container input{
+        display: flex;
+        width: 35%;
+        height: 25px;
+        position: relative;
+        left: 0%;
+        top: 60px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left:15px ;
+    
+        
+        
+    }
+    #btn{
+        position: relative;
+        top: 40%;
+        left: 0%;
+        height: 30px;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+    
+    
+    }
+    #bar{
+
+        height: 20px;
+        width: 60%;
+        border-radius: 10px;
+        position: relative;
+        left: -3%;
+        top: 43%;
     }
 
 }
