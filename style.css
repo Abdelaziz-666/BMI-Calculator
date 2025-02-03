@@ -195,7 +195,13 @@ body{
 
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 600px){
+    body{
+        background-image: linear-gradient( to bottom right,	#5a01ff 40%   , hsla(240, 67%, 94%, 0.781));
+        height: 100vh;
+        justify-items: center;
+        align-content: center;
+    }
 
     #h1{
         width: max-content;
@@ -252,7 +258,6 @@ body{
     }
 
 }
-
 
 
 
